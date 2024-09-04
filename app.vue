@@ -31,7 +31,7 @@
       <v-row>
         <v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/3q442ue7Wz">
-            <v-img src="./assets/img/test.jpg"></v-img>
+            <v-img :src="test"></v-img>
             <v-card-title>WLMouse Beast X 8K</v-card-title>
           </v-card>
         </v-col>
@@ -87,6 +87,8 @@
   import { useDisplay } from 'vuetify'
 
   const { name } = useDisplay()
+
+  const test = "https://down-th.img.susercontent.com/file/th-11134207-7r98p-lyx8vfong4h5c5"
 
   const toolberHeight = computed(() => {
     // name is reactive and
