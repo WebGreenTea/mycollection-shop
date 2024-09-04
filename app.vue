@@ -31,44 +31,43 @@
       <v-row>
         <v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/3q442ue7Wz">
-            <!-- <v-img :src="test"></v-img> -->
-             <img src="https://down-th.img.susercontent.com/file/th-11134207-7r98p-lyx8vfong4h5c5" alt="">
+             <img src="https://down-th.img.susercontent.com/file/th-11134207-7r98p-lyx8vfong4h5c5" class="vuetify-img">
             <v-card-title>WLMouse Beast X 8K</v-card-title>
           </v-card>
         </v-col>
         <v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/9UiQnJ9oC8">
-            <v-img src="https://down-th.img.susercontent.com/file/th-11134207-7r98o-lvyae871dwpb8d"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/th-11134207-7r98o-lvyae871dwpb8d" class="vuetify-img">
             <v-card-title>WLMouse Beast X Mini</v-card-title>
           </v-card>
         </v-col><v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/3q442okbHS">
-            <v-img src="https://down-th.img.susercontent.com/file/th-11134207-7r98y-lwr4zwz59ei811"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/th-11134207-7r98y-lwr4zwz59ei811" class="vuetify-img">
             <v-card-title>WLMouse Beast X Max</v-card-title>
           </v-card>
         </v-col><v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/20cPrIZ4x7">
-            <v-img src="https://down-th.img.susercontent.com/file/e0984db9f6816415627b5ea30afc4b45"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/e0984db9f6816415627b5ea30afc4b45" class="vuetify-img">
             <v-card-title>UGREEN USB3.0 Switch Selector 4Port 2 Computers</v-card-title>
           </v-card>
         </v-col><v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/4VJkplXKXp">
-            <v-img src="https://down-th.img.susercontent.com/file/th-11134207-7qul6-lf3p40ff8dm57e"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/th-11134207-7qul6-lf3p40ff8dm57e" class="vuetify-img">
             <v-card-title>SSD HIKSEMI FUTURE</v-card-title>
           </v-card>
         </v-col><v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/8zmABt6ymS">
-            <v-img src="https://down-th.img.susercontent.com/file/th-11134207-7r98x-lsqw280fhnqme0"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/th-11134207-7r98x-lsqw280fhnqme0" class="vuetify-img">
             <v-card-title>MasterBox TD500 MESH V2</v-card-title>
           </v-card>
         </v-col><v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/5pp8PssCNn">
-            <v-img src="https://down-th.img.susercontent.com/file/38c65709f5b0d9d66538eac1ab09ddfe"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/38c65709f5b0d9d66538eac1ab09ddfe" class="vuetify-img">
             <v-card-title>ZOMO PLUS Silver Spider Aluminium Keycap</v-card-title>
           </v-card>
         </v-col><v-col cols="6" lg="2" md="4" sm="4" xs="6" :class="cardClass">
           <v-card href="https://s.shopee.co.th/2Avq2xojxX">
-            <v-img src="https://down-th.img.susercontent.com/file/sg-11134201-22120-vwchv5zih7kv6b"></v-img>
+            <img src="https://down-th.img.susercontent.com/file/sg-11134201-22120-vwchv5zih7kv6b" class="vuetify-img">
             <v-card-title>Fonken อะแดปเตอร์แม่เหล็ก 100W USB C 24Pins Type C QC 4.0</v-card-title>
           </v-card>
         </v-col>
@@ -88,8 +87,6 @@
   import { useDisplay } from 'vuetify'
 
   const { name } = useDisplay()
-
-  const test = "https://down-th.img.susercontent.com/file/th-11134207-7r98p-lyx8vfong4h5c5"
 
   const toolberHeight = computed(() => {
     // name is reactive and
@@ -135,4 +132,11 @@
   background-color: #05BE87;
 
 }
+.vuetify-img {
+    display: block;
+    width: 100%; /* Adjust width according to your layout */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 4px; /* Similar to Vuetify's border radius */
+  }
 </style>
